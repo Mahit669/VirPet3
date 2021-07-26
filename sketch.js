@@ -22,7 +22,7 @@ function setup() {
   foodStock=database.ref('Food');
   foodStock.on("value",readStock);
 
-  fedTime=database.ref('FeedTime');
+  fedTime=database.ref('fedTime');
   fedTime.on("value",function(data){
     lastFed=data.val();
   });
